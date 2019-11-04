@@ -1,11 +1,12 @@
 import React from "react";
 import Axios from "axios";
+import TweetDisplay from "./tweetDisplay";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tweets: ""
+      tweets: []
     }
   };
 
@@ -25,7 +26,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>Rendering to browser</div>
+      <div>
+        <div className="titleStyle">Tweets with #IoT</div>
+        {this.state.tweets.length > 0 ? 
+          <TweetDisplay tweets={this.state.tweets}/> : <div>Querying Tweets...</div>
+        }
+      </div>
     )
   };
 };

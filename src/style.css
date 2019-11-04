@@ -1,0 +1,25 @@
+.titleStyle {
+  font-family: 'Apple Chancery', cursive;
+  font-size: 3em;
+  border-bottom-style: outset;
+  border-bottom-color: coral;
+  border-bottom-width: 5px;
+  text-align: center;
+}
+
+.carouselDivStyle {
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 40px;
+  border-bottom-style: outset;
+  border-bottom-color: coral;
+  border-bottom-width: 5px;
+  padding-right: 10px;
+}
+
+.tweetThumbStyle {
+  max-height: 300px;
+  max-width: 300px;
+}
