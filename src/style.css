@@ -5,6 +5,9 @@
   border-bottom-color: coral;
   border-bottom-width: 5px;
   text-align: center;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-top: 10px;
 }
 
 .carouselDivStyle {
@@ -20,6 +23,56 @@
 }
 
 .tweetThumbStyle {
-  max-height: 300px;
+  min-height: 200px;
   max-width: 300px;
+  margin: 5px;
+  padding: 3px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: coral;
+}
+
+.tweetMainStyle {
+  font-size: 20px;
+  border-bottom-style: outset;
+  border-bottom-color: coral;
+  border-bottom-width: 5px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  font-family: Optima, "sans-serif";
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-top: 10px;
+  min-height: 150px;
+}
+
+.categoryStyle {
+  font-weight: bold;
+}
+
+.tweetDataStyle {
+  font-size: 20px;
+  border-bottom-style: outset;
+  border-bottom-color: coral;
+  border-bottom-width: 5px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  font-family: Optima, "sans-serif";
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-top: 10px;
+}
+
+table,
+td {
+  border: 1px solid coral;
+}
+
+thead {
+  background-color: coral;
+  color: white;
+}
+
+.columnHead {
+  font-weight: bold;
 }

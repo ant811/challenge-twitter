@@ -6,8 +6,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tweets: []
-    }
+      tweets: [],
+      index: 0
+    };
+    this.updateIndex = this.updateIndex.bind(this);
   };
 
   componentDidMount() {
@@ -15,21 +17,31 @@ class App extends React.Component {
     .then((response) => {  
       this.setState({
         tweets: response.data.statuses
-      }, () => {
-        console.log("State updated with tweets");
       });
     })
     .catch((err) => {
-      console.log("Error with Axios GET: ", err);
+      console.error("Error with Axios GET: ", err);
     })
-  }
+  };
+
+  updateIndex(value) {
+    this.setState({
+      index: value
+    });
+  };
 
   render() {
     return (
       <div>
         <div className="titleStyle">Tweets with #IoT</div>
         {this.state.tweets.length > 0 ? 
-          <TweetDisplay tweets={this.state.tweets}/> : <div>Querying Tweets...</div>
+          <TweetDisplay 
+            updateIndex={this.updateIndex} 
+            tweets={this.state.tweets}
+            index={this.state.index}
+          /> 
+            : 
+          <div>Querying Tweets...</div>
         }
       </div>
     )
