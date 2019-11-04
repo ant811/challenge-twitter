@@ -15,7 +15,7 @@ The tweet detail section above the carousel highlights specific detail for a sin
 3. Run the following command in the terminal: `npm install`.  npm installs all modules listed as dependencies in package.json
 4. In the project directory folder, create a file named `.env`
 5. Paste the content from the file `.envExample` into the file `.env`
-6. In `.env`, replace the text `UPDATE_WITH_YOUR_INFORMATION` with  information specific to your own Twitter Development account.  For instructions, refer to [Twitter's development documentation] (https://developer.twitter.com/en/docs)
+6. In `.env`, replace the text `UPDATE_WITH_YOUR_INFORMATION` with  information specific to your own Twitter Development account.  For instructions, refer to [Twitter's development documentation](https://developer.twitter.com/en/docs)
 7. Run the following command in the terminal: `npm run start`. 
  An Express.js server is now running on local port 3030 
 8. Open an internet browser and go to the address [http://localhost:3030/](http://localhost:3030/).  The twitter application is available in the browser window and ready for use
